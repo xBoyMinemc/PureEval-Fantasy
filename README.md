@@ -1,4 +1,4 @@
-# PrueEval-Fantasy
+# PureEval-Fantasy
 
 [![](https://img.shields.io/badge/License-GPL-green)](https://github.com/Lampese/PureEval/blob/main/LICENSE) ![](https://img.shields.io/badge/version-v1.7-red) [![](https://img.shields.io/badge/npm-pureeval--fantasy-blue.svg)](https://www.npmjs.com/pureeval-fantasy)
 
