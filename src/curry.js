@@ -11,6 +11,7 @@ function _curry(fun) {
 	return result;
 }
 
+//我做错了一些事情，等待新的推送
 //我不知道，但使用两个参数位传递工具函数本身与被柯里化函数，这或许是性能危机的第一根稻草
 function curry(fn) {
 	const result = summon(fn.length, fn);
