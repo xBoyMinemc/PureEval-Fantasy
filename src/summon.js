@@ -1,22 +1,6 @@
-function summonArray(total) {
-	// 非结构性修改，但确实更不费解了
-	return Array.from({ length: total }, (_, i) => 'a' + i);
-	/*
-	return Array(total)
-		.fill()
-		.map((_, i) => 'a' + i);
-	*/
-}
-
-function _summon(total, fn) {
-	return Function(
-		...summonArray(total + 1),
-		'return a0.apply(this,Array.prototype.splice.call(arguments,1));'
-	).bind(null, fn);
-}
-
-// 不雅 
+// 不雅
 // 虽然我认为已经是相当好的情况
+//
 function summon(total,fn){
 	//total  预期接受的参数总量,fn  量够后调用的函数
 	const Yume = (...args) => (
@@ -26,7 +10,7 @@ function summon(total,fn){
 
 	Reflect.defineProperty( Yume, 'length', {    'value': total  });    // 为了length
 
-	return Yume
+	return Yume;
 }
 
 
