@@ -7,8 +7,10 @@ function curry(fun) {
 		else return curry(fun.bind(null, ...args));
 	});
 	result.origin = fun;
+	// result.len = 0;
 	return result;
 }
+
 
 function uncurry(fun) {
 	return fun.origin;
