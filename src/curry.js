@@ -1,6 +1,6 @@
 import { summon } from './summon.js';
 
-function curry(fun) {
+function curry(fun){
 	if (fun.length < 2) return fun;
 	const result = summon(fun.length, (...args) => {
 		if (args.length >= fun.length) return fun.call(null, ...args);
